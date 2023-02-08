@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bonneteau game</title>
+</head>
+<body>
+    <div class="WholeDivs">
+        <div class="controller">
+            <div class="attemptsAvalue">
+                <h2>Attempts</h2>
+                <output class="attempts">0</output>
+            </div>
+            <br>
+            <div class="scoreAvalue">
+                <h2>Score</h2>
+                <output class="Score">0</output>
+            </div>
+            <br>
+            <div class="timeCounter">
+                <h2>Wait in...</h2>
+                <output class="timeout">3</output>
+            </div>
+            <br>
+            <button class="buttonOfRest" onclick="RestAll()">Reset</button>
+        </div>
+        <div class="Maincontainer">
+            <h1 style="font-family: ElMessiri ;" >Bonneteau game</h1>
+            <h4>Choose one of the cards below</h4>
+            <br>
+            <div class="container">
+                <button class="child C0" onclick="randChose(0)"></button>
+                <button class="child C1" onclick="randChose(1)"></button>
+                <button class="child C2" onclick="randChose(2)"></button>
+            </div>        
+        </div>
+        <div class="Statistics">
+            <h1>High Score</h1>
+            <div class="ranks">#1</div>
+            <div class="ranks">#2</div>
+            <div class="ranks">#3</div>
+            <div class="ranks">#4</div>
+            <div class="ranks">#5</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
